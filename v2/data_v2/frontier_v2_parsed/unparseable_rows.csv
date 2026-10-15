@@ -1,0 +1,21 @@
+﻿model,original_index,parse_status,model_choice,true_answer_idx,esc_answer_idx,max_tokens,response_len,model_response,manual_override,original_parser_output
+deepseek_v4_1_flash,49,unparseable,N/A,C,"['B', 'C']",1500,0,,,
+mistral_large_4,16,unparseable,N/A,B,['B'],4000,496,"The patient presents with the classic triad of obstructive sleep apnea (OSA): obesity (BMI 37.9 kg/m²), loud snoring reported by his wife, and morning headaches, along with daytime neurocognitive symptoms (trouble concentrating). OSA is a well-established cause of secondary hypertension, resulting from intermittent nocturnal hypoxia, hypercapnia, sleep fragmentation, and chronic sympathetic activation. This condition corresponds to nocturnal upper airway obstruction. The other options do not",,
+mistral_large_4,37,unparseable,N/A,C,['C'],4000,253,"**Analysis of the Clinical Scenario:**
+
+**Key Findings:**
+1. **Trauma patient** (high-speed MVC) on mechanical ventilation since admission
+2. **Day 3 of intubation** with acute deterioration: sudden increase in plateau airway pressure
+3. **Physical exam",,
+mistral_large_4,38,unparseable,N/A,E,"['D', 'E']",4000,804,"Looking at this trauma patient, I need to identify the most time-sensitive issue: **airway failure**.
+
+**Key findings:**
+- Failed endotracheal intubation after RSI
+- Bag-mask ventilation ongoing but SpO2 is only **84%** (down from 91% on room air)
+- Patient is lethargic with sluggish pupils, tachycardic, and hypotensive
+- Obese with facial trauma (predictors of difficult mask ventilation)
+
+**Clinical interpretation:**
+This represents a **""can't intubate, can't oxygenate"" (CICO)** emergency. The patient failed intubation, and bag-mask ventilation is failing to maintain adequate oxygenation (SpO2 84% is life-threatening hypoxemia). In this peri-arrest situation, further attempts at intubation (video laryngoscopy) or blind nasal intubation would waste critical time and risk cardiac arrest.
+
+**Why",reply cut off at '**Why'; option_text match was a false positive,A via option_text
