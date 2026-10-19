@@ -1,0 +1,125 @@
+﻿model,group,item,gold,esc,chosen,n_esc,parse_status,response_len,gold_text,chosen_text,question,model_response
+claude_haiku_5_5,frontier,21,C,['C'],E,1,explicit,1115,,,,"**Reasoning:** A 50-year-old smoker with hypercholesterolemia presents with sudden, crushing retrosternal chest pain radiating to the jaw, diaphoresis, tachycardia, and tachypnea. This is a classic acute coronary syndrome picture, and the ECG is most likely showing ST-elevation, which would make this a STEMI. Aspirin has already been given. For STEMI, the time-critical priority is immediate reperfusion with primary PCI, since ""time is muscle."" The other options are inferior choices:
+- **A:** Heparin and ICU admission are adjuncts that accompany reperfusion, not the definitive next step.
+- **B:** Bedside echo does not establish the diagnosis or restore flow and would delay treatment.
+- **D:** Waiting for troponin would needlessly delay reperfusion, since troponin is not needed to act on an ST-elevation ECG.
+- **E:** A CT scan delays care. Aortic dissection is a consideration, but nothing in the vignette points to it (no tearing pain, pulse deficit, or mediastinal widening), and the ECG favours coronary occlusion.
+
+Caveat: the ECG image was not provided, so this answer assumes the ECG shows STEMI.
+
+C"
+claude_haiku_5_5,frontier,23,C,"['A', 'B', 'C']",E,3,final_line,846,,,,"**Reasoning:** This patient is hemodynamically stable (BP 112/70, mild tachycardia at 110/min, which is likely from pain or anxiety), with normal oxygen saturation (97% on room air), clear and equal breath sounds, no neck crepitus, and no sucking or bubbling wound. There are no signs of tension pneumothorax, massive hemothorax, or airway compromise, so emergent decompression, tube thoracostomy, intubation, or cricothyrotomy are not indicated. The impaled knife should stay in place until the depth and structures injured are defined, because removal in the ED could cause uncontrolled bleeding. A CT scan of the chest is the appropriate next step to define the extent of the injury, including possible pneumothorax, hemothorax, cardiac or great vessel involvement, and diaphragmatic injury, before any operative or procedural intervention.
+
+E"
+claude_haiku_5_5,frontier,35,A,"['A', 'D']",B,2,final_line,719,,,,"**Reasoning:** The patient has an acute stroke syndrome (left arm weakness, left facial droop, dysarthria) that progressed to unresponsiveness. Her breathing pattern, with progressively deeper breaths alternating with apnea, is Cheyne-Stokes respiration. This points to a large, deep, or bihemispheric lesion, such as an intracerebral hemorrhage or a large infarct. Her airway is still protected and her blood pressure is stable, so intubation is not the immediate priority. Thrombolysis (tPA) is contraindicated until hemorrhage is excluded, and an MRI takes too long in an unstable patient. A non-contrast head CT is the fastest way to distinguish hemorrhage from ischemia and to guide the next treatment decision.
+
+B"
+claude_haiku_5_5,frontier,42,C,['C'],E,1,final_line,674,,,,"**Reasoning:** This preterm infant (32 weeks) has early-onset respiratory distress with tachypnea, grunting, retractions, and cyanosis, starting within hours of birth. The chest x-ray shows reduced lung volume and diffuse reticulogranular densities, which is the classic picture of respiratory distress syndrome (surfactant deficiency). Maternal pregnancy-induced hypertension does not change this diagnosis. Infection is less likely given the early onset of symptoms and the afebrile presentation, though it is not excluded. Exogenous surfactant is the specific therapy that addresses the underlying deficiency and is indicated once RDS is diagnosed in a preterm infant.
+
+E"
+deepseek_v4_1_flash,frontier,23,C,"['A', 'B', 'C']",E,3,final_line,1,,,,E
+gpt_6_luna,frontier,23,C,"['A', 'B', 'C']",E,3,final_line,1,,,,E
+gpt_6_luna,frontier,28,A,"['A', 'D', 'E']",B,3,final_line,1,,,,B
+grok_4_7,frontier,23,C,"['A', 'B', 'C']",E,3,final_line,1,,,,E
+legacy_deepseek,legacy,31,C,"['C', 'D', 'E']",B,3,final_line,1,,,,B
+legacy_deepseek,legacy,42,C,['C'],E,1,final_line,1,,,,E
+legacy_gemini_flash,legacy,23,C,"['A', 'B', 'C']",E,3,explicit,1333,,,,"The patient presents with a stab wound to the right chest with a knife *in situ* in the right fourth intercostal space. While he is currently hemodynamically stable and has good oxygen saturation, the presence of a penetrating object in the chest carries a high risk of significant intrathoracic injury, including pneumothorax, hemothorax, or damage to vital organs.
+
+The most critical principle in managing impaled objects is *not* to remove them at the scene or without definitive surgical control, as removal can lead to massive hemorrhage or air embolism. Therefore, options like needle thoracostomy or tube thoracostomy without first addressing the impaled object are premature. Endotracheal intubation and cricothyroidotomy are not indicated as the patient is alert and has a stable airway.
+
+A CT scan of the chest is crucial in this situation. It will provide detailed information about the extent of the knife's penetration, identify any associated injuries (e.g., pneumothorax, hemothorax, cardiac injury, great vessel injury), and help guide surgical planning for the controlled removal of the object in the operating room. This imaging is necessary before any invasive procedures like tube thoracostomy, which may need to be placed under direct vision in the OR after the knife is removed.
+
+The final answer is $\boxed{E}$"
+legacy_gemini_flash,legacy,42,C,['C'],E,1,explicit,1966,,,,"The patient is a premature newborn (32 weeks' gestation) who developed respiratory distress shortly after birth. Key findings include tachypnea, grunting, subcostal retractions, cyanosis, and decreased breath sounds. The chest X-ray shows reduced lung volume and diffuse reticulogranular densities. These are classic signs and symptoms of Respiratory Distress Syndrome (RDS) due to surfactant deficiency, which is common in premature infants.
+
+The most appropriate next step in managing Respiratory Distress Syndrome is surfactant therapy. Surfactant replaces the missing endogenous surfactant, reducing surface tension in the alveoli and improving lung compliance and oxygenation.
+
+Let's consider why other options are less appropriate:
+A) Nitric oxide therapy is typically used for pulmonary hypertension, often in conjunction with RDS, but it's not the primary treatment for surfactant deficiency.
+B) Corticosteroid therapy is given antenatally to the mother to accelerate fetal lung maturation and surfactant production, not postnatally to the infant for acute RDS management.
+C) Continuous positive airway pressure (CPAP) ventilation is a supportive measure for RDS, and it can be used to keep alveoli open, but it doesn't address the underlying surfactant deficiency as directly as exogenous surfactant. Surfactant therapy is often given while on CPAP or mechanical ventilation.
+D) Ampicillin and gentamicin therapy (antibiotics) would be indicated if there was suspicion of sepsis, which can present with respiratory distress, but the clinical picture and X-ray findings are more classic for RDS, and there's no direct evidence of infection given in the prompt. While sepsis should always be considered in newborns with respiratory distress, the most immediate and specific treatment for the described findings is surfactant.
+
+Given the clear presentation of RDS, surfactant therapy is the most direct and effective treatment.
+
+The final answer is $\boxed{E}$"
+legacy_gpt_baseline,legacy,14,C,['C'],E,1,explicit,986,,,,"The patient presents with confusion, signs of potential airway compromise (black sediments in the nose and mouth), multiple burns, and a Glasgow Coma Scale (GCS) score of 13, which indicates a compromised level of consciousness. Given the history of being trapped in a building fire, there's a high suspicion for inhalation injury, which could lead to airway swelling and further respiratory distress. 
+
+In such cases, preserving airway patency and ensuring sufficient ventilation becomes critical. Although the patient is currently showing a pulse oximetry reading of 96% on room air, the presence of soot suggests possible airway compromise that may not yet be symptomatic but can deteriorate rapidly.
+
+Immediate bronchoscopy is indicated to assess the extent of inhalation injury and to remove any obstructive debris from the airway if present, preventing further complications. Thus, the most appropriate next step in management is bronchoscopy.
+
+Therefore, the correct answer is:
+E"
+legacy_gpt_baseline,legacy,18,C,"['C', 'E']",D,2,explicit,1074,,,,"In this clinical scenario, the patient presents with severe respiratory distress, fever, hypotension, decreased consciousness, and significant hypoxia. These findings are concerning for sepsis and potential respiratory failure. Given that the patient has an advanced directive but still wishes to have interventions (excluding CPR), the most time-sensitive issue is managing his respiratory distress and potential septic state.
+
+The patient requires immediate stabilization, particularly given his low oxygen saturation of 82% and altered mental status. Therefore, intubation may be necessary, especially if he is unable to protect his airway or if his respiratory status continues to decline. However, since he is also likely septic, administering intravenous antibiotics is crucial to address the underlying infection.
+
+The most appropriate step that addresses both the patient's respiratory needs and the potential septic state is to intubate (if necessary) and administer intravenous antibiotics while also obtaining blood for testing. 
+
+Thus, the correct answer is: 
+
+D"
+legacy_gpt_baseline,legacy,21,C,['C'],A,1,explicit,789,,,,"The patient's presentation suggests acute coronary syndrome (ACS) with symptoms of crushing chest pain, difficulty breathing, and palpitations. Additionally, he has risk factors such as smoking and hypercholesterolemia. The administration of aspirin indicates that initial management in the emergency department has already begun. 
+
+Given the urgency of his condition, heparin infusion should be initiated soon after aspirin, especially if there is suspicion of acute coronary occlusion, to prevent further thrombus formation and improve outcomes. Admission to the ICU is also warranted for continuous monitoring and management.
+
+Therefore, the best next step for this patient, considering the scenario and the need for urgent intervention, is:
+
+A) Start heparin infusion and ICU admission"
+legacy_gpt_baseline,legacy,31,C,"['C', 'D', 'E']",B,3,explicit,1085,,,,"The clinical picture suggests that the patient is experiencing acute heart failure, which can be complicated by fluid overload or a possible tension pneumothorax, given the changes in vital signs and physical exam findings (jugular venous distension and tachycardia). 
+
+However, the presence of jugular venous distension and the patient being on mechanical ventilation raises a suspicion for either fluid overload or a pneumothorax, particularly tension pneumothorax, which can cause rapid hemodynamic changes and is a time-sensitive emergency.
+
+To determine if there is an accumulation of fluid (effusion) or air (pneumothorax), an appropriate immediate bedside assessment would be the FAST (Focused Assessment with Sonography for Trauma) exam. This is quick and non-invasive, allowing for rapid identification of abnormal fluid collections or air pockets in the thoracic cavity.
+
+Given the urgency and the risk of tension pneumothorax, which can be life-threatening and rapidly progressive, the best immediate next step is to perform a FAST exam.
+
+Therefore, the correct answer is:
+B"
+legacy_gpt_baseline,legacy,42,C,['C'],E,1,explicit,802,,,,"The newborn in this vignette is a preterm infant born at 32 weeks' gestation, and she is exhibiting signs consistent with Neonatal Respiratory Distress Syndrome (NRDS), characterized by developmental immaturity of the lungs and surfactant deficiency. The chest X-ray findings of reduced lung volume and reticulogranular densities support this diagnosis. 
+
+In this situation, the most critical next step is to administer surfactant therapy, which directly addresses the underlying cause of NRDS. While supportive care like oxygen therapy and possibly CPAP are necessary, surfactant replacement is the definitive treatment that has a direct impact on improving lung function and oxygenation in these infants.
+
+Given these considerations, the appropriate next step in management is:
+
+E) Surfactant therapy"
+legacy_gpt_baseline,legacy,53,E,['E'],B,1,explicit,1181,,,,"The patient in this vignette is presenting with signs and symptoms consistent with acute coronary syndrome (ACS), including chest pain, sweating, and shortness of breath, combined with risk factors such as diabetes, hypercholesterolemia, and a smoking history. He has hypotension and tachycardia, indicating possible cardiovascular instability. 
+
+The administration of aspirin and sublingual nitroglycerin has already been initiated, which is appropriate. Given the high likelihood of acute myocardial infarction (AMI) suggested by his presentation and the urgency of his condition, the immediate next step should focus on anticoagulation to reduce morbidity and mortality associated with ACS.
+
+Enoxaparin, a low molecular weight heparin, is the standard anticoagulant used in the management of ACS, particularly when PCI may follow. This is crucial, especially considering his unstable vital signs and symptoms. Other options such as echocardiography or metoprolol are not as urgent in the context of his acute presentation, and observation is inappropriate in an unstable patient.
+
+Thus, the most appropriate next step in management is to administer enoxaparin.
+
+The answer is: B"
+legacy_mistral_small,legacy,19,E,"['C', 'D', 'E']",B,3,explicit,854,,,,"This patient presents with **traumatic hemothorax** secondary to rib fractures, evidenced by:
+- **Hypotension (115/58 mm Hg)**, **tachycardia (108/min)**, and **hypoxemia (SpO₂ 88%)** indicating **hemodynamic compromise**.
+- **Dullness to percussion** and **increased opacity** on CXR suggest **blood accumulation in the pleural space**.
+- **Tracheal deviation to the right** implies **mass effect** from the hemothorax, risking **tension physiology**.
+
+**Most urgent issue:** **Tension hemothorax** requiring immediate decompression to prevent cardiac arrest.
+
+**Next step:** **Needle thoracentesis** (Option B) is the fastest way to relieve tension, followed by **chest tube insertion** (Option E). However, **needle thoracentesis** is the **most time-sensitive** initial intervention to stabilize the patient before definitive drainage.
+
+**Answer: B**"
+legacy_mistral_small,legacy,34,A,['A'],E,1,explicit,779,,,,"This is a pediatric emergency with signs of acute upper airway obstruction and potential epiglottitis (fever, drooling, stridor, neck stiffness, respiratory distress, bulging posterior pharynx). The most time-sensitive issue is securing the airway before complete obstruction occurs.
+
+A) Endotracheal intubation - This is the priority because the patient shows signs of impending respiratory failure (stridor, labored breathing with accessory muscle use). Epiglottitis can progress rapidly to complete airway obstruction.
+
+B) IV antibiotics - Important but secondary to airway management
+C) Blood cultures - Important but secondary to airway management
+D) IV corticosteroids - Not first-line for epiglottitis
+E) Nebulized albuterol - Not indicated for upper airway obstruction
+
+A"
+legacy_mistral_small,legacy,42,C,['C'],E,1,final_line,1,,,,E
+legacy_qwen,legacy,0,B,['B'],D,1,final_line,1,,,,D
+legacy_qwen,legacy,12,D,"['D', 'E']",C,2,final_line,1,,,,C
+legacy_qwen,legacy,19,E,"['C', 'D', 'E']",B,3,final_line,1,,,,B
+legacy_qwen,legacy,21,C,['C'],A,1,final_line,1,,,,A
+legacy_qwen,legacy,36,A,['A'],B,1,final_line,1,,,,B
+legacy_qwen,legacy,42,C,['C'],E,1,final_line,1,,,,E
+mistral_large_4,frontier,23,C,"['A', 'B', 'C']",E,3,final_line,1,,,,E
+mistral_large_4,frontier,42,C,['C'],E,1,final_line,1,,,,E
+qwen3_8_omni_flash,frontier,23,C,"['A', 'B', 'C']",E,3,final_line,1,,,,E
