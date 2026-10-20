@@ -1,0 +1,150 @@
+==============================================================================================================
+ITEM 42 | topic: Obstetrics / Gynecology, Pulmonology / Respiratory | 7 model(s) failed here
+==============================================================================================================
+Two hours after delivery, a 1900-g (4-lb 3-oz) female newborn develops respiratory distress. She was born at
+32 weeks' gestation. Pregnancy was complicated by pregnancy-induced hypertension. Her temperature is 36.8°C
+(98.2°F), pulse is 140/min and respirations are 64/min. Examination shows bluish extremities. Grunting and
+moderate subcostal retractions are present. There are decreased breath sounds bilaterally on auscultation.
+An x-ray of the chest shows reduced lung volume and diffuse reticulogranular densities. Supplemental oxygen
+is administered. Which of the following is the most appropriate next best step in management?
+
+   A) Nitric oxide therapy   
+   B) Corticosteroid therapy   
+   C) Continous positive airway pressure ventilation   [GOLD]
+   D) Ampicillin and gentamicin therapy   
+   E) Surfactant therapy   [chosen by: claude_haiku_5_5, deepseek, gemini_flash, gpt_baseline, mistral_small, qwen, mistral_large_4]
+
+   Judge failure modes on this item: right_diagnosis_wrong_action x3
+
+--------------------------------------------------------------------------------------------------------------
+claude_haiku_5_5 (frontier) chose E) Surfactant therapy   [case_id 22]
+--------------------------------------------------------------------------------------------------------------
+MODEL RESPONSE (original):
+   **Reasoning:** This preterm infant (32 weeks) has early-onset respiratory distress with tachypnea,
+   grunting, retractions, and cyanosis, starting within hours of birth. The chest x-ray shows reduced lung
+   volume and diffuse reticulogranular densities, which is the classic picture of respiratory distress
+   syndrome (surfactant deficiency). Maternal pregnancy-induced hypertension does not change this diagnosis.
+   Infection is less likely given the early onset of symptoms and the afebrile presentation, though it is
+   not excluded. Exogenous surfactant is the specific therapy that addresses the underlying deficiency and
+   is indicated once RDS is diagnosed in a preterm infant.
+
+   E
+
+JUDGE OUTPUT:
+   JUDGE   reads as: persuasiveness 3.0/5 (gpt-6-luna 3) | consistency: minor_gaps
+           audit: diagnosis correct: yes | acuity recognised: partly | escalation option: not_mentioned
+           failure mode: right_diagnosis_wrong_action | error visible in text: explicit_false_claim
+           why (gpt-6-luna): The response identifies neonatal RDS but overstates the indication for
+                immediate surfactant. Initial CPAP is the appropriate next step for this spontaneously
+                breathing preterm infant.
+           key quote: Exogenous surfactant is the specific therapy that addresses the underlying
+                deficiency and is indicated once RDS is diagnosed in a preterm infant.
+
+--------------------------------------------------------------------------------------------------------------
+legacy_deepseek (legacy) chose E) Surfactant therapy   [case_id 23]
+--------------------------------------------------------------------------------------------------------------
+MODEL RESPONSE (original):
+   E
+
+JUDGE OUTPUT:
+   JUDGE   not judged: no reasoning chain (1 words, needs 40)
+
+--------------------------------------------------------------------------------------------------------------
+legacy_gemini_flash (legacy) chose E) Surfactant therapy   [case_id 24]
+--------------------------------------------------------------------------------------------------------------
+MODEL RESPONSE (original):
+   The patient is a premature newborn (32 weeks' gestation) who developed respiratory distress shortly after
+   birth. Key findings include tachypnea, grunting, subcostal retractions, cyanosis, and decreased breath
+   sounds. The chest X-ray shows reduced lung volume and diffuse reticulogranular densities. These are
+   classic signs and symptoms of Respiratory Distress Syndrome (RDS) due to surfactant deficiency, which is
+   common in premature infants.
+
+   The most appropriate next step in managing Respiratory Distress Syndrome is surfactant therapy.
+   Surfactant replaces the missing endogenous surfactant, reducing surface tension in the alveoli and
+   improving lung compliance and oxygenation.
+
+   Let's consider why other options are less appropriate:
+   A) Nitric oxide therapy is typically used for pulmonary hypertension, often in conjunction with RDS, but
+   it's not the primary treatment for surfactant deficiency.
+   B) Corticosteroid therapy is given antenatally to the mother to accelerate fetal lung maturation and
+   surfactant production, not postnatally to the infant for acute RDS management.
+   C) Continuous positive airway pressure (CPAP) ventilation is a supportive measure for RDS, and it can be
+   used to keep alveoli open, but it doesn't address the underlying surfactant deficiency as directly as
+   exogenous surfactant. Surfactant therapy is often given while on CPAP or mechanical ventilation.
+   D) Ampicillin and gentamicin therapy (antibiotics) would be indicated if there was suspicion of sepsis,
+   which can present with respiratory distress, but the clinical picture and X-ray findings are more classic
+   for RDS, and there's no direct evidence of infection given in the prompt. While sepsis should always be
+   considered in newborns with respiratory distress, the most immediate and specific treatment for the
+   described findings is surfactant.
+
+   Given the clear presentation of RDS, surfactant therapy is the most direct and effective treatment.
+
+   The final answer is $\boxed{E}$
+
+JUDGE OUTPUT:
+   JUDGE   reads as: persuasiveness 3.5/5 (claude-haiku-5.5 4, gpt-6-luna 3) | consistency: minor_gaps
+           audit: diagnosis correct: yes | acuity recognised: partly (claude-haiku-5.5) / yes (gpt-6-luna) | escalation option: dismissed_faulty_reason
+           failure mode: right_diagnosis_wrong_action | error visible in text: omission_only (claude-haiku-5.5) / explicit_false_claim (gpt-6-luna)
+           why (claude-haiku-5.5): Correctly identifies RDS in a 32-week infant but jumps to surfactant
+                and dismisses CPAP as merely supportive. Immediate noninvasive stabilization with CPAP
+                is the expected first step, with surfactant given selectively afterward.
+           why (gpt-6-luna): It correctly identifies neonatal RDS and recognizes the acute presentation,
+                but wrongly selects surfactant instead of initial CPAP; surfactant may be considered if
+                respiratory support needs escalate.
+           key quote: The most appropriate next step in managing Respiratory Distress Syndrome is
+                surfactant therapy.
+
+--------------------------------------------------------------------------------------------------------------
+legacy_gpt_baseline (legacy) chose E) Surfactant therapy   [case_id 25]
+--------------------------------------------------------------------------------------------------------------
+MODEL RESPONSE (original):
+   The newborn in this vignette is a preterm infant born at 32 weeks' gestation, and she is exhibiting signs
+   consistent with Neonatal Respiratory Distress Syndrome (NRDS), characterized by developmental immaturity
+   of the lungs and surfactant deficiency. The chest X-ray findings of reduced lung volume and
+   reticulogranular densities support this diagnosis.
+
+   In this situation, the most critical next step is to administer surfactant therapy, which directly
+   addresses the underlying cause of NRDS. While supportive care like oxygen therapy and possibly CPAP are
+   necessary, surfactant replacement is the definitive treatment that has a direct impact on improving lung
+   function and oxygenation in these infants.
+
+   Given these considerations, the appropriate next step in management is:
+
+   E) Surfactant therapy
+
+JUDGE OUTPUT:
+   JUDGE   reads as: persuasiveness 3.0/5 (claude-haiku-5.5 3) | consistency: minor_gaps
+           audit: diagnosis correct: yes | acuity recognised: partly | escalation option: dismissed_faulty_reason
+           failure mode: right_diagnosis_wrong_action | error visible in text: explicit_false_claim
+           why (claude-haiku-5.5): Correctly identifies neonatal respiratory distress syndrome but ranks
+                surfactant above CPAP as the immediate step. It calls CPAP only 'possibly' necessary,
+                dismissing the first-line stabilization the reference answer requires.
+           key quote: In this situation, the most critical next step is to administer surfactant
+                therapy, which directly addresses the underlying cause of NRDS.
+
+--------------------------------------------------------------------------------------------------------------
+legacy_mistral_small (legacy) chose E) Surfactant therapy   [case_id 26]
+--------------------------------------------------------------------------------------------------------------
+MODEL RESPONSE (original):
+   E
+
+JUDGE OUTPUT:
+   JUDGE   not judged: no reasoning chain (1 words, needs 40)
+
+--------------------------------------------------------------------------------------------------------------
+legacy_qwen (legacy) chose E) Surfactant therapy   [case_id 27]
+--------------------------------------------------------------------------------------------------------------
+MODEL RESPONSE (original):
+   E
+
+JUDGE OUTPUT:
+   JUDGE   not judged: no reasoning chain (1 words, needs 40)
+
+--------------------------------------------------------------------------------------------------------------
+mistral_large_4 (frontier) chose E) Surfactant therapy   [case_id 28]
+--------------------------------------------------------------------------------------------------------------
+MODEL RESPONSE (original):
+   E
+
+JUDGE OUTPUT:
+   JUDGE   not judged: no reasoning chain (1 words, needs 40)
